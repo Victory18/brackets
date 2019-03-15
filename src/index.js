@@ -9,4 +9,5 @@ module.exports = function check(str, bracketsConfig = [arr1]) {
     }
     if (countA == countB) return true;
   }
+  return true;
 }

@@ -5,7 +5,7 @@ module.exports = function check(str, bracketsConfig = [arr1]) {
     var countB = 0;
     for (var i = 0; i < str.length; i++) {
       if (str[i] == arr2[0]) countA++;
-      if (str[i] == arr[1]) countB++;
+      if (str[i] == arr2[1]) countB++;
     }
     if (countA == countB) return true;
   }

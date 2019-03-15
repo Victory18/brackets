@@ -5,12 +5,10 @@ module.exports = function check(str, bracketsConfig) {
     if (i[0] ='{') var re = /\{\}/;
     if (i[0] = '[') var re = /\[\]/;
     if (i[0] = '|') var re = /\|\|/;
-    while (str.search(re) != -1) {
+    do {
       str = str.replace(re, '');
-    }
-
+    } while (str.search(re) == true); 
+  }
     return str;
-    }
-    if (str = '') return true;
   }
  

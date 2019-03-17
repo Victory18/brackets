@@ -4,6 +4,8 @@ module.exports = function check(str, bracketsConfig) {
 
   for (var i = 0; i < arrNew.length; i++) {
     str = str.replace(arrNew[i], '');
+    if (str.indexOf(arrNew[i]) == -1) break;
+    else str = str.replace(arrNew[i], '');
     }
 
   return str.length === 0 ? true : false;

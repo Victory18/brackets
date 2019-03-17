@@ -11,7 +11,7 @@ module.exports = function check(str, bracketsConfig) {
       } while (str.indexOf(arrNew[i]) != -1);
     }
 
-  } while (re.test(str));
+  } while (str.search(re) == 1);
     return str.length === 0 ? true : false;
   }
 

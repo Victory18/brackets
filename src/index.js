@@ -1,7 +1,7 @@
 module.exports = function check(str, bracketsConfig) {
 
   var arrNew = bracketsConfig.map( element => element.join('') );
-    if (arrNew.some (v => str.includes(v)) ) {
+    while (arrNew.some (v => str.includes(v)) ) {
 
     for (var i = 0; i < arrNew.length; i++) {
       do {

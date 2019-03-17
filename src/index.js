@@ -4,7 +4,7 @@ module.exports = function check(str, bracketsConfig) {
 
   for (var i = 0; i < arrNew.length; i++) {
     var el = arrNew[i];
-    var re = new RegExp(el, 'g');
+    var re = new RegExp('${el}', 'g');
     str = str.replace(re, '');
     if (str.search(re) == -1) break;
     else str = str.replace(re, '');
